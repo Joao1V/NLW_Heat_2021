@@ -21,15 +21,16 @@
           <span>
             <img src="img/build.svg" alt="Selo Rocketseat" />
           </span>
-          <img src="img/aa.jpg" alt="Foto Pessoal" />
+          <img  alt="Foto Pessoal" id="userPhoto" />
         </div>
 
-        <h1 id="userName">João Victor</h1>
-        <a href="https://github.com/Joao1V">
-          <img src="img/github.svg" alt="Icone github" />Joao1V
+        <h1 id="userName"></h1>
+        <a href="https://github.com/Joao1V" id="userGit">
+          <img src="img/github.svg" alt="Icone github" />
+          <span id="userLink"></span>
         </a>
 
-        <p>Rocketseat Out/2021 🚀🚀🚀</p>
+        <p id="userBio">Rocketseat Out/2021 🚀🚀🚀</p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -61,24 +62,6 @@
         </ul>
       </div>
     </main>
-    <script>
-      const LinksSocialMedia = {
-        github: 'Joao1V',
-        youtube: 'codigofontetv',
-        facebook: 'joaovictor.predrohenrique',
-        instagram: 'ja1_v',
-        twitter: 'jaum1_v'
-      }
-
-      function changeSocialMediaLinks() {
-       for (let li of socialLinks.children) {
-        const  social = li.getAttribute('class')
-        li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}` 
-        
-        //vai dentro da li, pega a posição 0 e da um alert 
-       }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
